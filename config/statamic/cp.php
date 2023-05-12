@@ -38,7 +38,17 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'collection',
+            'collection' => 'pages',
+            'width' => 50,
+            'limit' => 10,
+            'sort' => 'title:asc'
+        ],
+        [
+            'type' => 'updater',
+            'width' => 50,
+        ]
     ],
 
     /*
@@ -56,7 +66,7 @@ return [
     |
     */
 
-    'date_format' => 'Y-m-d',
+    'date_format' => 'd.m.Y',
 
     /*
     |--------------------------------------------------------------------------
